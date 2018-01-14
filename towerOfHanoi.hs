@@ -1,3 +1,4 @@
+module TowerOfHanoi where
 type Peg = String
 type Move = (Peg, Peg)
 
