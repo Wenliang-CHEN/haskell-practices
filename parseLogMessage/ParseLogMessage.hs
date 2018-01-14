@@ -1,4 +1,4 @@
-module ParseLogMessage where
+module ParseLog where
 import Data.List
 import Data.List.Split
 import Log
