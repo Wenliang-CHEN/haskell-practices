@@ -1,4 +1,4 @@
-module Main where
+module CreditCardValidator where
 
 divideByTen :: Integer -> Integer
 divideByTen = floor . realToFrac . (/10) . fromIntegral
@@ -27,10 +27,3 @@ validateCreditCardNumber x
     | otherwise = (sumDigits $ getDoubledSecondDigits $ toDigits x) `mod` 10 == 0
     where digits = toDigits x
 
-main :: IO ()
-main = do  
-    putStrLn "key in an integer"  
-    digit <- getLine  
-    print $ validateCreditCardNumber $ read digit
-  
---main = print $ getDoubledSecondDigits $ toDigits 0000000000002220
